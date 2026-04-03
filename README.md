@@ -112,8 +112,7 @@ GROUP BY
     )
 ORDER BY month;
 ```
-```
-**Output:**
+``` **Output:**
 month  |revenue   |
 -------+----------+
 2016-09|    252.24|
