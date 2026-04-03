@@ -262,5 +262,5 @@ avg_delivery_days|
 ## 👤 Author
 
 **Krithik Vasan**      
-[linkdin](https://www.linkedin.com/in/krithikvasans/)
+[LinkedIn](https://www.linkedin.com/in/krithikvasans/)
 
