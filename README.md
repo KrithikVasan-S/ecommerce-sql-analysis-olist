@@ -82,8 +82,7 @@ SELECT
 FROM order_payments;
 
 ```
-```
-**Output:**
+``` **Output:**
 
 total_revenue|
 -------------+
