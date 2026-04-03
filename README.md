@@ -146,9 +146,7 @@ month  |revenue   |
 * Revenue increases steadily over months
 * Peak observed in November , 2017
 
-```markdown
-![Revenue Chart](Charts/Revenue.png)
-```
+[![Revenue Chart](Charts/Revenue.png)](Charts/Revenue.png)
 
 ---
 
