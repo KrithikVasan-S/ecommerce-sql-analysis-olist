@@ -1,8 +1,8 @@
 # Project Overview
 
-**Project Title:** E-commerce Analysis (Olist Dataset)
-**Level:** Beginner
-**Dataset:** Olist Brazilian E-commerce Dataset
+**Project Title:** E-commerce Analysis (Olist Dataset)     
+**Level:** Beginner     
+**Dataset:** Olist Brazilian E-commerce Dataset      
 
 ---
 
@@ -76,20 +76,19 @@ The following business questions were explored:
 
 ### Total Revenue Generated
 
-**SQL Query:**
-
 ```sql
 SELECT 
     ROUND(SUM(payment_value), 2) AS total_revenue
 FROM order_payments;
 
 ```
-
+```
 **Output:**
 
 total_revenue|
 -------------+
   16008872.12|
+```
 
 ---
   
@@ -113,7 +112,7 @@ GROUP BY
     )
 ORDER BY month;
 ```
-
+```
 **Output:**
 month  |revenue   |
 -------+----------+
@@ -142,6 +141,7 @@ month  |revenue   |
 2018-08|1022425.32|
 2018-09|   4439.54|
 2018-10|    589.67|
+```
 
 * Revenue increases steadily over months
 * Peak observed in November , 2017
@@ -167,7 +167,7 @@ LIMIT 10;
 
 ```
 
-**Output:** 
+```**Output:** 
 customer_id                     |total_spent|
 --------------------------------+-----------+
 1617b1357756262bfa56ab541c47bc16|   13664.08|
@@ -180,9 +180,9 @@ df55c14d1476a9a3467f131269c2477f|    4950.34|
 e0a2412720e9ea4f26c1ac985f6a7358|    4809.44|
 24bbf5fd2f2e1b359ee7de94defc4a15|    4764.34|
 3d979689f636322c62418b6346b1c6d2|    4681.78|
+```
 
-* The analysis shows that a small number of customers contribute disproportionately to total revenue,
-  highlighting the importance of high-value customers in driving business performance.
+* The analysis shows that a small number of customers contribute disproportionately to total revenue, highlighting the importance of high-value customers in driving business performance.
   
 ---
 
@@ -198,7 +198,8 @@ ORDER BY total_sold DESC
 LIMIT 10;
 ```
 
-**Output:**
+```**Output:**
+
 product_id                      |total_sold|
 --------------------------------+----------+
 aca2eb7d00ea1a7b8ebd4e68314663af|       527|
@@ -211,7 +212,7 @@ d1c427060a0f73f6b889a5c7c61f2ac4|       343|
 53b36df67ebb7c41585e8d54d6772e08|       323|
 154e7e31ebfa092203795c972e5804a6|       281|
 3dd2a17168ec895c781a9191c1e95ad7|       274|
-
+```
 ---
 
 ## Delivery Performance
@@ -227,11 +228,12 @@ SELECT
 FROM orders
 WHERE order_delivered_customer_date IS NOT NULL;
 ```
-**Output:**
+```**Output:**
 
 avg_delivery_days|
 -----------------+
           12.4973|
+```
           
 * The average delivery time is around 12.5 days, indicating a moderate delivery duration across orders
 
